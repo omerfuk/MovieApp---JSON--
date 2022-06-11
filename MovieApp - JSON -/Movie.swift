@@ -16,11 +16,11 @@ struct Movie: Decodable {
     let imageName: String
     
     var imageSmall: String {
-        return imageName + "-small"
+        return imageName + "-small.jpg"
     }
     
     var imageWide: String {
-        return imageName + "-wide"
+        return imageName + "-wide.jpg"
     }
     
     var categoriesDescription: String {

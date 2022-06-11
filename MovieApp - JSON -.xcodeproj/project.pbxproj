@@ -72,10 +72,10 @@
 				DE1564BD284A115800C1B507 /* ViewController.swift */,
 				DE6550D4284A22880049815A /* MovieDetailViewController.swift */,
 				DE1564B0284A0E7300C1B507 /* Assets.xcassets */,
+				DE1564BF284A12ED00C1B507 /* Files */,
 				DE1564B2284A0E7300C1B507 /* LaunchScreen.storyboard */,
 				DE1564B5284A0E7300C1B507 /* Info.plist */,
 				DE1564C5284A1D4B00C1B507 /* movies.json */,
-				DE1564BF284A12ED00C1B507 /* Files */,
 				DE1564C1284A168300C1B507 /* Movie.swift */,
 				DE1564C3284A1A0400C1B507 /* MovieTableViewCell.swift */,
 			);
