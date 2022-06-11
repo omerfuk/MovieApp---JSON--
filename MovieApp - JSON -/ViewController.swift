@@ -5,6 +5,7 @@
 //  Created by Ömer Faruk Kılıçaslan on 3.06.2022.
 //
 
+//Version 1.0, Just before the Swipe Actions Added.
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -18,6 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         loadData()
+        
 
     }
     
