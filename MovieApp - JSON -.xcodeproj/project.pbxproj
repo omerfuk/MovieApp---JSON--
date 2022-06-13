@@ -18,6 +18,7 @@
 		DE1564C4284A1A0400C1B507 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1564C3284A1A0400C1B507 /* MovieTableViewCell.swift */; };
 		DE1564C6284A1D4B00C1B507 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = DE1564C5284A1D4B00C1B507 /* movies.json */; };
 		DE6550D5284A22880049815A /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6550D4284A22880049815A /* MovieDetailViewController.swift */; };
+		DE74F01028578922002A879D /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE74F00F28578922002A879D /* FavoritesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DE1564C3284A1A0400C1B507 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		DE1564C5284A1D4B00C1B507 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
 		DE6550D4284A22880049815A /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		DE74F00F28578922002A879D /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +68,53 @@
 		DE1564A6284A0E7000C1B507 /* MovieApp - JSON - */ = {
 			isa = PBXGroup;
 			children = (
-				DE1564A7284A0E7000C1B507 /* AppDelegate.swift */,
-				DE1564A9284A0E7000C1B507 /* SceneDelegate.swift */,
-				DE1564AD284A0E7000C1B507 /* Main.storyboard */,
+				DE74F01428579220002A879D /* Resources */,
+				DE74F011285791FB002A879D /* Model */,
+				DE74F01328579207002A879D /* ViewModel */,
+				DE74F01228579201002A879D /* View */,
+				DE74F00F28578922002A879D /* FavoritesViewController.swift */,
 				DE1564BD284A115800C1B507 /* ViewController.swift */,
 				DE6550D4284A22880049815A /* MovieDetailViewController.swift */,
+				DE1564C3284A1A0400C1B507 /* MovieTableViewCell.swift */,
+				DE1564C5284A1D4B00C1B507 /* movies.json */,
+				DE1564B5284A0E7300C1B507 /* Info.plist */,
+			);
+			path = "MovieApp - JSON -";
+			sourceTree = "<group>";
+		};
+		DE74F011285791FB002A879D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE1564C1284A168300C1B507 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE74F01228579201002A879D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE1564AD284A0E7000C1B507 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE74F01328579207002A879D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DE74F01428579220002A879D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE1564A7284A0E7000C1B507 /* AppDelegate.swift */,
+				DE1564A9284A0E7000C1B507 /* SceneDelegate.swift */,
 				DE1564B0284A0E7300C1B507 /* Assets.xcassets */,
 				DE1564BF284A12ED00C1B507 /* Files */,
 				DE1564B2284A0E7300C1B507 /* LaunchScreen.storyboard */,
-				DE1564B5284A0E7300C1B507 /* Info.plist */,
-				DE1564C5284A1D4B00C1B507 /* movies.json */,
-				DE1564C1284A168300C1B507 /* Movie.swift */,
-				DE1564C3284A1A0400C1B507 /* MovieTableViewCell.swift */,
 			);
-			path = "MovieApp - JSON -";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +192,7 @@
 			files = (
 				DE1564C4284A1A0400C1B507 /* MovieTableViewCell.swift in Sources */,
 				DE1564A8284A0E7000C1B507 /* AppDelegate.swift in Sources */,
+				DE74F01028578922002A879D /* FavoritesViewController.swift in Sources */,
 				DE1564BE284A115800C1B507 /* ViewController.swift in Sources */,
 				DE1564C2284A168300C1B507 /* Movie.swift in Sources */,
 				DE6550D5284A22880049815A /* MovieDetailViewController.swift in Sources */,

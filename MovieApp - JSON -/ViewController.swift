@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var movies = [Movie]()
+    var isFavorite: Bool = false
+    
     
     @IBOutlet weak var tableView: UITableView!
 
@@ -19,6 +21,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         loadData()
+        
         
 
     }
@@ -64,6 +67,47 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.prepare(movie: row)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let favAction = UIContextualAction(style: .normal, title: "🌟") { contextualAction, view, boolValue in
+            
+            
+            if self.isFavorite == true {
+               //send cell data to favoritesViewController
+                
+            }
+            else {
+                //remove cell data from favoritesViewController
+                
+            }
+            
+
+
+        }
+        
+        if self.isFavorite == true {
+            favAction.backgroundColor = .red
+            
+            print("Removed from Favorite : \(self.movies[indexPath.row].title)")
+            self.isFavorite = false
+            
+        }
+        
+        else {
+            favAction.backgroundColor = .green
+            print("Added to Favorite : \(self.movies[indexPath.row].title)")
+            self.isFavorite = true
+        }
+        
+       
+        
+        return UISwipeActionsConfiguration(actions: [favAction])
     }
     
 
